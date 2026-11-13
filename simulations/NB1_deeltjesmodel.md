@@ -1083,14 +1083,14 @@ def update(frame):
         counter += 1
         ### YOUR CODE HERE ###
 
-    #dot.set_data([particleB.r[0]], [particleB.r[1]])
+    dot.set_data([particleB.r[0]], [particleB.r[1]])
     #if particleB.r[0]**2>100: 
-        particleB.v[0] = -particleB.v[0]
+    #    particleB.v[0] = -particleB.v[0]
 
     #if particleB.r[1]**2>100: 
-        particleB.v[1] = -particleB.v[1]
+    #    particleB.v[1] = -particleB.v[1]
 
-    #return dot, counter_text
+    return dot, counter_text
 
 # Create animation
 ani = FuncAnimation(fig, update, frames=range(300), init_func=init, blit=True, interval=50)
@@ -1106,8 +1106,9 @@ Pas de bovenstaande code aan zodat $m_1 = 1$ en $m_2 = 50$. Run de code en geef 
 
 
 ```python tags=["NB1_eindantwoord"]
-#num_botsingen = 22
+num_botsingen = 22
 ### YOUR CODE HERE ###
+# aantal frames moest omhoog om de laaste botsing mee te rekenen
 ```
 
 ```{exercise}
